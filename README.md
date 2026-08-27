@@ -33,7 +33,7 @@ Acesse em `http://localhost:5173`
 
 ## 🎓 Contexto Acadêmico
 
-Laboratório 3 da disciplina FFE — Curso Técnico em ADS, SENAI.
+Laboratório 3 da disciplina FFE — Graduação em ADS, SENAI.
 
 ## 🚀 Status do Projeto
 
