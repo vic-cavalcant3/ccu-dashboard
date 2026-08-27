@@ -1,0 +1,79 @@
+.cenario {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #87ceeb 0%, #cdeffd 60%, #a8d8a8 60%, #a8d8a8 100%);
+}
+
+.sol {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ffd93d;
+  box-shadow: 0 0 20px 6px rgba(255, 217, 61, 0.6);
+}
+
+.nuvens {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 200%;
+  height: 30px;
+  background-image:
+    radial-gradient(circle, #fff 40%, transparent 41%),
+    radial-gradient(circle, #fff 40%, transparent 41%);
+  background-size: 60px 30px, 90px 30px;
+  background-position: 20px 0, 150px 10px;
+  opacity: 0.85;
+  animation: mover-nuvens 20s linear infinite;
+}
+
+.arvores {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 200%;
+  font-size: 24px;
+  letter-spacing: 30px;
+  animation: mover-nuvens 8s linear infinite;
+}
+
+.estrada {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: repeating-linear-gradient(
+    90deg,
+    #333 0px,
+    #333 40px,
+    #555 40px,
+    #555 80px
+  );
+  animation-name: mover-estrada;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.veiculo {
+  position: absolute;
+  bottom: 10px;
+  left: 45%;
+  font-size: 32px;
+  transform: translateX(-50%);
+}
+
+@keyframes mover-nuvens {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes mover-estrada {
+  from { background-position-x: 0; }
+  to { background-position-x: -80px; }
+}
